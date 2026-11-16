@@ -65,7 +65,7 @@
   scrollbar-width:thin;
 }
 .case-photos>.case-image{
-  flex:0 0 min(46%,500px);
+  flex:0 0 min(40%,440px);
   scroll-snap-align:start;
 }
 .case-photos>.case-image img{
@@ -75,5 +75,5 @@
 }
 @media(max-width:720px){
   .case-photos{display:flex;padding:0 14px 18px;gap:12px}
-  .case-photos>.case-image{flex-basis:85%}
+  .case-photos>.case-image{flex-basis:76%}
 }
