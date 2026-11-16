@@ -149,3 +149,86 @@
 .management-flow p{font-size:13px;color:var(--muted);line-height:1.8}
 @media(max-width:900px){.business-hero-grid{grid-template-columns:1fr}.business-hero-photo{max-width:550px}.management-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:720px){.business-hero{padding:65px 0}.business-hero h1{font-size:35px}.business-hero-lead{font-size:17px}.management-grid,.maintenance-list,.management-benefits,.business-examples,.management-flow{grid-template-columns:1fr}.management-grid article{padding:22px}.maintenance-list>div{padding:21px}.business-hero-photo img{aspect-ratio:4/3}}
+
+/* 法人ページ限定：ネイビー×アンティークゴールドのプレミアムデザイン */
+.corporate-page{
+  --corp-navy:#172b34;
+  --corp-navy-dark:#101e27;
+  --corp-gold:#c8a873;
+  --corp-gold-light:#ead7ac;
+  --corp-ink:#20323b;
+  --corp-paper:#f5f4ef;
+  --corp-line:#d9dedb;
+  color:var(--corp-ink);
+}
+.corporate-page .site-header{background:#ffffff;border-bottom:1px solid #e4e6e3}
+.corporate-page .brand small{color:#7b8b8f}
+.corporate-page .desktop-nav a:hover{color:#987549}
+.corporate-page .header-contact{background:var(--corp-navy);color:#fff}
+.corporate-page .corporate-kicker{background:var(--corp-navy-dark);color:var(--corp-gold-light);font-size:10px;letter-spacing:.15em;font-weight:700}
+.corporate-page .corporate-kicker .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:10px;padding-bottom:10px}
+.corporate-page .business-hero{
+  position:relative;overflow:hidden;
+  background:radial-gradient(ellipse at 84% 8%,#3e5054 0,transparent 42%),linear-gradient(126deg,#0c1d28 0%,#18313a 64%,#213c40 100%);
+  padding:94px 0 90px;
+}
+.corporate-page .business-hero::before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.23;background:repeating-linear-gradient(135deg,transparent 0,transparent 43px,#ffffff12 44px,transparent 45px)}
+.corporate-page .business-hero-grid{position:relative;z-index:1;grid-template-columns:1.08fr .92fr;gap:clamp(32px,5vw,74px)}
+.corporate-page .business-hero .eyebrow.light{color:var(--corp-gold-light);border-left:2px solid var(--corp-gold);padding-left:14px;letter-spacing:.17em}
+.corporate-page .business-hero h1{font-size:clamp(35px,4.2vw,57px);line-height:1.5;letter-spacing:.045em;max-width:690px;text-wrap:pretty}
+.corporate-page .business-hero-lead{color:#f0e1bf;font-size:18px}
+.corporate-page .business-hero-copy{color:#d4e0de;font-size:15px;line-height:2.05}
+.corporate-page .business-hero .btn-light{background:var(--corp-gold-light);color:#172b34;border:1px solid var(--corp-gold-light)}
+.corporate-page .business-hero .btn-outline{border:1px solid #c6d1d0;color:white}
+.corporate-page .business-hero-photo{position:relative;max-width:520px;padding:12px;border:1px solid #bda16d80}
+.corporate-page .business-hero-photo img{aspect-ratio:4/4.7;object-fit:cover;border-radius:0;box-shadow:none;filter:saturate(.84) contrast(1.04)}
+.corporate-page .corporate-photo-label{position:absolute;left:12px;right:12px;bottom:12px;padding:18px 22px;background:linear-gradient(0deg,#0c2026e8,#0c2026cf);border-top:1px solid #d7bd8c66;display:flex;flex-direction:column;gap:5px}
+.corporate-page .corporate-photo-label small{color:var(--corp-gold-light);font-size:10px;letter-spacing:.18em}
+.corporate-page .corporate-photo-label strong{font-size:16px;letter-spacing:.05em}
+.corporate-page .corporate-promise{background:#eae6dd;border-bottom:1px solid #d4d3ca}
+.corporate-page .corporate-promise .wrap{display:grid;grid-template-columns:repeat(4,1fr);padding-top:20px;padding-bottom:20px}
+.corporate-page .corporate-promise span{font-size:12px;font-weight:800;text-align:center;color:#455257;letter-spacing:.04em;border-right:1px solid #c5c6bf}
+.corporate-page .corporate-promise span:last-child{border-right:0}
+.corporate-page .section{padding-top:98px;padding-bottom:98px}
+.corporate-page .section h2{color:var(--corp-navy);letter-spacing:.035em}
+.corporate-page .eyebrow{color:#8b704b;letter-spacing:.2em}
+.corporate-page .section-heading{max-width:850px}
+.corporate-page .section-heading h2{position:relative;padding-bottom:19px}
+.corporate-page .section-heading h2::after{content:"";position:absolute;bottom:0;left:0;width:65px;height:2px;background:var(--corp-gold)}
+.corporate-page .section-soft{background:var(--corp-paper)}
+.corporate-page .management-grid{gap:20px}
+.corporate-page .management-grid article{background:#fff;border:1px solid var(--corp-line);border-top:3px solid var(--corp-gold);border-radius:4px;padding:32px;box-shadow:0 12px 34px #172b3409}
+.corporate-page .management-grid article span{color:#987343;font-size:12px;letter-spacing:.2em}
+.corporate-page .management-grid h3,.corporate-page .maintenance-list h3,.corporate-page .management-benefits h3{color:var(--corp-navy)}
+.corporate-page .maintenance-list>div{border-left-color:var(--corp-gold);border-radius:3px;box-shadow:0 6px 25px #132d3210}
+.corporate-page .management-benefits>div{border-top-color:var(--corp-gold);border-top-width:2px}
+.corporate-page .management-benefits strong{color:#987343}
+.corporate-page .business-examples figure{border:1px solid var(--corp-line);border-radius:4px;box-shadow:0 8px 28px #182c3010}
+.corporate-page .business-examples figcaption{color:var(--corp-navy);border-top:1px solid #e5e7e5}
+.corporate-page .text-link{color:var(--corp-navy);border-bottom-color:var(--corp-gold)}
+.corporate-page .management-flow li{background:#f0efea;border:1px solid #e0ded6;border-radius:4px}
+.corporate-page .management-flow li::before{color:#947141}
+.corporate-page .area-section{background:#f8f6f0;border-top:1px solid #e9e5da}
+.corporate-page .contact-section{background:linear-gradient(140deg,#142832,#203d42);color:#fff}
+.corporate-page .contact-section h2{color:#fff}
+.corporate-page .contact-section .eyebrow.light{color:var(--corp-gold-light)}
+.corporate-page .contact-option{border-radius:4px;border-top:3px solid var(--corp-gold)}
+.corporate-page .contact-option strong{color:var(--corp-navy)}
+.corporate-page .footer{background:#0c1e27}
+@media(max-width:900px){
+ .corporate-page .business-hero-grid{grid-template-columns:1fr}
+ .corporate-page .business-hero-photo{width:min(100%,520px)}
+ .corporate-page .corporate-promise .wrap{grid-template-columns:repeat(2,1fr);row-gap:14px}
+ .corporate-page .corporate-promise span:nth-child(2){border-right:0}
+}
+@media(max-width:720px){
+ .corporate-page .business-hero{padding:62px 0 64px}
+ .corporate-page .business-hero h1{font-size:clamp(32px,8vw,41px)}
+ .corporate-page .business-hero-photo img{aspect-ratio:4/3}
+ .corporate-page .corporate-kicker .wrap{flex-wrap:wrap;justify-content:flex-start}
+ .corporate-page .corporate-kicker span:nth-child(2){display:none}
+ .corporate-page .corporate-promise span{font-size:11px;padding:0 6px}
+ .corporate-page .section{padding-top:74px;padding-bottom:74px}
+ .corporate-page .management-grid article{padding:25px}
+ .corporate-page .corporate-photo-label strong{font-size:14px}
+}
