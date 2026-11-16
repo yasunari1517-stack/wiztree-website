@@ -17,3 +17,37 @@
 .works-cta p{font-weight:700;font-size:15px;margin:0}
 @media(max-width:950px){.works-list{grid-template-columns:1fr}}
 @media(max-width:720px){.case-heading{padding:22px 20px 18px}.case-heading h3{font-size:19px}.case-photos{padding:0 10px 12px;gap:8px}.case-image figcaption{left:6px;top:6px;font-size:10px;padding:2px 7px}.works-cta{display:block;padding:24px}.works-cta .btn{margin-top:14px;display:inline-flex}}
+
+
+/* 施工写真の視認性改善 2026-11: 大きなBefore / After */
+.section-works .wrap{max-width:1100px}
+.works-list{grid-template-columns:minmax(0,1fr);gap:34px}
+.case-card{border-radius:20px;box-shadow:0 12px 35px rgba(24,67,43,.07)}
+.case-heading{padding:30px 34px 22px}
+.case-heading h3{font-size:clamp(22px,2.4vw,29px);margin:14px 0 8px}
+.case-heading p{font-size:15px;max-width:820px}
+.case-photos{padding:0 24px 26px;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.case-image{overflow:hidden;border-radius:12px;background:#e5ece5}
+.case-image img{aspect-ratio:4/3;width:100%;height:auto;object-fit:cover;border-radius:12px;cursor:zoom-in;transition:transform .2s ease,filter .2s ease}
+.case-image img:hover{filter:brightness(.94)}
+.case-image figcaption{top:14px;left:14px;padding:6px 14px;font-size:13px;box-shadow:0 2px 12px #00000019;pointer-events:none}
+.case-image:has(img:focus-visible){outline:3px solid #d2a941;outline-offset:3px}
+.case-image img:focus-visible{outline:3px solid #d2a941;outline-offset:-3px}
+.photo-modal[hidden]{display:none}
+.photo-modal{position:fixed;inset:0;z-index:1000;background:rgba(8,21,14,.92);display:flex;align-items:center;justify-content:center;padding:64px 20px 72px}
+.photo-modal-content{max-width:min(1100px,100%);max-height:100%;display:flex;flex-direction:column;align-items:center;gap:12px}
+.photo-modal img{max-height:calc(100dvh - 155px);max-width:100%;width:auto;object-fit:contain;border-radius:7px}
+.photo-modal-caption{color:#fff;text-align:center;font-size:14px;line-height:1.6}
+.photo-modal-close{position:absolute;top:14px;right:20px;border:1px solid #ffffff88;border-radius:100px;color:#fff;background:#ffffff18;padding:8px 17px;font-size:15px;cursor:pointer}
+.photo-modal-close:hover{background:#ffffff3a}
+@media(max-width:720px){
+  .works-list{gap:24px}
+  .case-heading{padding:24px 20px 18px}
+  .case-heading h3{font-size:21px}
+  .case-heading p{font-size:14px}
+  .case-photos{grid-template-columns:1fr;padding:0 14px 18px;gap:14px}
+  .case-image img{aspect-ratio:4/3}
+  .case-image figcaption{top:12px;left:12px;font-size:13px;padding:6px 12px}
+  .photo-modal{padding-inline:12px}
+}
+@media(prefers-reduced-motion:reduce){.case-image img{transition:none}}
