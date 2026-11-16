@@ -102,3 +102,6 @@
 .company-dl dd a{text-decoration:underline;text-underline-offset:3px}
 @media(max-width:950px){.desktop-nav{gap:10px;font-size:11px}}
 @media(max-width:720px){.company-intro{grid-template-columns:1fr;gap:30px}.company-photo-wrap{max-width:300px}.company-details{margin-top:45px;padding:22px}.company-dl>div{grid-template-columns:1fr;gap:2px}.company-message h3{font-size:25px}}
+
+/* 代表者写真（縦長ポートレート） */
+.company-portrait{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:center 36%;border-radius:18px;border:1px solid #dbe7d9;display:block}
