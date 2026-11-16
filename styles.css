@@ -77,3 +77,28 @@
   .case-photos{display:flex;padding:0 14px 18px;gap:12px}
   .case-photos>.case-image{flex-basis:76%}
 }
+
+/* 会社概要・代表者紹介 */
+.company-section{background:#fff}
+.company-intro{display:grid;grid-template-columns:minmax(250px,360px) minmax(0,1fr);gap:clamp(32px,6vw,88px);align-items:center;margin-top:38px}
+.company-photo-wrap{max-width:360px;width:100%;margin:auto}
+.company-photo-pending{background:#f0f5ee;border-radius:18px;overflow:hidden;aspect-ratio:4/4.5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0;color:#55866b;border:1px solid #dbe7d9}
+.company-photo-pending svg{width:90%;max-height:86%}
+.company-photo-pending span{font-size:12px;letter-spacing:.08em;margin-top:-20px;margin-bottom:16px}
+.company-portrait-caption{display:flex;align-items:baseline;gap:12px;padding-top:17px;color:var(--green)}
+.company-portrait-caption small{font-size:12px}
+.company-portrait-caption strong{font-size:22px;letter-spacing:.1em}
+.company-kicker{font-size:12px;font-weight:800;letter-spacing:.19em;color:#5c9275}
+.company-message h3{font-size:clamp(24px,2.7vw,34px);line-height:1.65;margin:14px 0 23px}
+.company-message p{color:var(--muted);font-size:15px;line-height:2.1}
+.company-message .company-sign{margin-top:22px;color:var(--text);font-size:14px}
+.company-sign strong{font-size:19px;letter-spacing:.09em}
+.company-details{margin-top:72px;border:1px solid var(--line);border-radius:16px;padding:32px 38px;background:#fafbf8}
+.company-details h3{font-size:22px;margin:0 0 18px}
+.company-dl{margin:0}
+.company-dl>div{display:grid;grid-template-columns:160px minmax(0,1fr);gap:22px;padding:16px 0;border-top:1px solid #e2e9df}
+.company-dl dt{font-size:14px;color:#547663;font-weight:800}
+.company-dl dd{margin:0;font-size:14px;line-height:1.9;overflow-wrap:anywhere}
+.company-dl dd a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:950px){.desktop-nav{gap:10px;font-size:11px}}
+@media(max-width:720px){.company-intro{grid-template-columns:1fr;gap:30px}.company-photo-wrap{max-width:300px}.company-details{margin-top:45px;padding:22px}.company-dl>div{grid-template-columns:1fr;gap:2px}.company-message h3{font-size:25px}}
