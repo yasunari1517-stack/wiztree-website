@@ -232,3 +232,18 @@
  .corporate-page .management-grid article{padding:25px}
  .corporate-page .corporate-photo-label strong{font-size:14px}
 }
+
+/* SEO FAQ content */
+.faq-section{background:#fff}
+.faq-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.faq-grid details{border:1px solid var(--line);background:#fafcf9;border-radius:10px;padding:20px 22px}
+.faq-grid summary{cursor:pointer;font-size:16px;font-weight:750;line-height:1.65;list-style-position:outside}
+.faq-grid details[open]{border-color:#b2cdb8}
+.faq-grid details p{color:var(--muted);font-size:14px;line-height:1.95;margin:12px 0 0}
+.faq-grid a{color:var(--green);text-decoration:underline;text-underline-offset:3px}
+.area-business-link{text-decoration:underline;text-underline-offset:3px;font-weight:700;color:var(--green)}
+.corporate-page .faq-grid details{border-color:#d5d7d0;background:#f6f5f0;border-radius:3px}
+.corporate-page .faq-grid details[open]{border-color:var(--corp-gold)}
+.corporate-page .faq-grid a{color:var(--corp-navy)}
+.corporate-page .faq-section{background:#fff}
+@media(max-width:720px){.faq-grid{grid-template-columns:1fr}.faq-grid details{padding:18px}}
