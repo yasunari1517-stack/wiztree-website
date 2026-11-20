@@ -481,3 +481,16 @@ body{letter-spacing:.015em;background:#fff}
 @media(max-width:950px){#services .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#services .service-card{min-height:260px}}
 @media(max-width:620px){#services .service-grid{grid-template-columns:1fr;gap:12px}#services .service-card{min-height:205px;padding:24px 23px 25px}#services .service-card-top{min-height:85px}#services .service-icon{width:76px;height:76px;flex-basis:76px}#services .service-icon svg{width:46px;height:46px}#services .service-card h3{font-size:18px}}
 @media(prefers-reduced-motion:reduce){#services .service-icon,#services .service-card{transition:none}#services .service-card:hover,#services .service-card:hover .service-icon{transform:none}}
+
+/* Why WIZ TREE: customer-first reassurance */
+#about .about-reassurance-lead{margin:-21px 0 43px;color:#dce7d8;letter-spacing:.04em;font-size:15px;line-height:1.9}
+#about .value-grid>div{padding-bottom:14px}
+#about .value-grid h3{font-size:clamp(19px,1.65vw,23px);line-height:1.5;margin-bottom:14px}
+#about .value-grid p{font-size:14px;line-height:2.1;color:#e1e9e0}
+#about .about-trust-footer{margin-top:42px;padding:22px 0;border-top:1px solid rgba(226,236,219,.25);display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:13px 32px;color:#e2ebda}
+#about .about-trust-footer span{font-size:12px;letter-spacing:.06em}
+#about .about-trust-footer span::before{content:"✓";color:#b4d2ad;font-weight:800;margin-right:9px}
+#about .about-trust-action{text-align:center;margin-top:26px}
+#about .about-trust-action .btn{display:inline-flex;align-items:center;gap:20px;min-height:52px;background:#f5f3e8;color:#204533;padding:12px 27px;font-weight:750;font-size:13px;border-radius:2px}
+#about .about-trust-action .btn:hover{background:#fff}
+@media(max-width:720px){#about .about-reassurance-lead{margin:-12px 0 30px;font-size:14px}#about .about-trust-footer{justify-content:flex-start;margin-top:24px;padding-top:22px;gap:12px 18px}#about .about-trust-footer span{font-size:12px}#about .about-trust-action .btn{width:100%;justify-content:center}}
