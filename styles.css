@@ -454,3 +454,15 @@ body{letter-spacing:.015em;background:#fff}
  .corporate-page .section{padding-top:70px;padding-bottom:70px}
 }
 @media(prefers-reduced-motion:reduce){.photo-story-item img,.service-card{transition:none}.photo-story-item:hover img{transform:none}.service-card:hover{transform:none}}
+
+/* Representative's personal introduction */
+.owner-personal-profile{margin:32px 0 0;padding:25px 26px 22px;background:rgba(255,255,255,.74);border-left:3px solid #89a78c}
+.owner-personal-profile .owner-profile-label{font-size:11px;letter-spacing:.17em;color:#376a4d;font-weight:750;margin:0 0 12px}
+.owner-profile-label span{font-size:12px;letter-spacing:.06em;margin-left:9px;color:#627569}
+.owner-personal-profile>p:not(.owner-profile-label){font-size:14px;line-height:2;letter-spacing:.025em;margin:0 0 17px}
+.owner-hobbies{border-top:1px solid #e0e7dc;padding-top:17px}
+.owner-hobbies-title{display:block;font-weight:750;font-size:13px;color:#274a34;letter-spacing:.08em;margin-bottom:12px}
+.owner-hobbies ul{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:0 0 17px}
+.owner-hobbies li{padding:6px 13px;border:1px solid #d0dfd0;border-radius:2px;background:#f5f8f1;color:#375a40;font-size:13px}
+.owner-personal-profile .owner-personal-closing{margin-bottom:0!important;color:#536d59!important}
+@media(max-width:720px){.owner-personal-profile{padding:20px 17px;margin-top:26px}.owner-hobbies ul{gap:7px}}
