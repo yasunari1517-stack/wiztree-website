@@ -466,3 +466,18 @@ body{letter-spacing:.015em;background:#fff}
 .owner-hobbies li{padding:6px 13px;border:1px solid #d0dfd0;border-radius:2px;background:#f5f8f1;color:#375a40;font-size:13px}
 .owner-personal-profile .owner-personal-closing{margin-bottom:0!important;color:#536d59!important}
 @media(max-width:720px){.owner-personal-profile{padding:20px 17px;margin-top:26px}.owner-hobbies ul{gap:7px}}
+
+/* Service illustration redesign: custom vector icons */
+#services .service-grid{gap:18px;align-items:stretch}
+#services .service-card{display:flex;flex-direction:column;min-height:278px;padding:29px 30px 32px;background:#fbfbf8;border:1px solid #dce4d9;border-radius:4px!important;transition:box-shadow .22s ease,transform .22s ease,border-color .22s ease}
+#services .service-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;min-height:106px;margin-bottom:6px}
+#services .service-card .service-num{font-family:Georgia,serif;color:#a28a61;font-size:16px;letter-spacing:.1em;line-height:1.7;padding-top:3px}
+#services .service-icon{display:grid;place-items:center;width:96px;height:96px;flex:0 0 96px;border-radius:50%;background:#edf3e9;border:1px solid #dce8d6;color:#4d7a5a;transition:background .25s ease,transform .25s ease}
+#services .service-icon svg{display:block;width:57px;height:57px;overflow:visible}
+#services .service-card h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:19px;font-weight:700;line-height:1.6;letter-spacing:.025em;margin:4px 0 12px;color:#243b30}
+#services .service-card p{font-size:13px;line-height:1.95;margin:0;color:#69796f}
+#services .service-card:hover{transform:translateY(-4px);border-color:#aec6b1;box-shadow:0 18px 36px rgba(22,59,43,.1)}
+#services .service-card:hover .service-icon{background:#e3eee0;transform:scale(1.045)}
+@media(max-width:950px){#services .service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#services .service-card{min-height:260px}}
+@media(max-width:620px){#services .service-grid{grid-template-columns:1fr;gap:12px}#services .service-card{min-height:205px;padding:24px 23px 25px}#services .service-card-top{min-height:85px}#services .service-icon{width:76px;height:76px;flex-basis:76px}#services .service-icon svg{width:46px;height:46px}#services .service-card h3{font-size:18px}}
+@media(prefers-reduced-motion:reduce){#services .service-icon,#services .service-card{transition:none}#services .service-card:hover,#services .service-card:hover .service-icon{transform:none}}
