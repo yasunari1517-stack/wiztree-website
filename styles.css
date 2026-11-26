@@ -652,3 +652,18 @@ body{letter-spacing:.015em;background:#fff}
 .local-faq-section{background:#f7f7f3}
 @media(max-width:900px){.local-hero-layout{grid-template-columns:1fr}.local-hero-visual{max-width:680px}.local-hero-visual img{aspect-ratio:4/3}.local-service-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.local-works-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.local-area-grid,.local-intro-grid{grid-template-columns:1fr;gap:23px}}
 @media(max-width:600px){.local-hero{padding:55px 0 62px}.local-hero h1{font-size:clamp(29px,8vw,41px)}.local-hero .actions{flex-direction:column;align-items:stretch}.local-hero .actions .btn{justify-content:space-between}.local-location-strip .wrap{justify-content:flex-start}.local-service-grid,.local-works-grid,.local-flow-list{grid-template-columns:1fr}.local-service-grid article{min-height:0;padding:24px}.local-works-photos img{aspect-ratio:4/3}.local-area-list{padding:16px}.local-area-list span{font-size:16px;padding:16px 5px}}
+
+/* Machida-specific editorial section — shared local styles above */
+.machida-page .local-hero{background:#1d382e}
+.machida-page .local-hero-visual img{object-position:center 32%}
+.machida-page .local-hero-content .eyebrow{color:#dfcfab}
+.machida-page .local-service-grid article{border-top-color:#bca780}
+.machida-page .local-service-number{color:#9b7950}
+.machida-page .local-works-photos img{object-position:center 35%}
+.machida-property-section{background:#f6f4ee}
+.machida-property-section h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;line-height:1.55;letter-spacing:.04em}
+.machida-property-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin:35px 0 24px}
+.machida-property-grid>div{background:#fff;border:1px solid #e2e5de;padding:28px 30px;border-left:3px solid #a6b6a4}
+.machida-property-grid h3{color:#294b36;font-size:19px;margin:0 0 10px}
+.machida-property-grid p{font-size:14px;color:#66766b;line-height:2;margin:0}
+@media(max-width:700px){.machida-property-grid{grid-template-columns:1fr;gap:12px}.machida-property-grid>div{padding:23px 21px}}
