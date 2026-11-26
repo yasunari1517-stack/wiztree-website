@@ -54,3 +54,26 @@ document.getElementById('year').textContent = new Date().getFullYear();
     }
   });
 })();
+
+/* 施工事例専用ページ：分類ごとの絞り込み */
+(() => {
+  const filters = document.querySelectorAll('.works-filter-button');
+  const projects = document.querySelectorAll('.works-project[data-categories]');
+  const count = document.querySelector('.works-results-count');
+  if (!filters.length || !projects.length) return;
+  filters.forEach(button => button.addEventListener('click', () => {
+    const category = button.dataset.filter;
+    let visible = 0;
+    filters.forEach(item => {
+      const active = item === button;
+      item.classList.toggle('is-active', active);
+      item.setAttribute('aria-pressed', String(active));
+    });
+    projects.forEach(project => {
+      const show = category === 'all' || project.dataset.categories.split(' ').includes(category);
+      project.hidden = !show;
+      if (show) visible++;
+    });
+    if (count) count.textContent = visible + '件の施工事例を表示しています';
+  }));
+})();
