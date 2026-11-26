@@ -561,3 +561,48 @@ body{letter-spacing:.015em;background:#fff}
 @media(max-width:760px){.corporate-page .corporate-project-photos.three{grid-template-columns:1fr 1fr}.corporate-page .corporate-project-photos.three figure:first-child{grid-column:span 2}.corporate-page .corporate-work-project{padding:27px 0 32px}.corporate-page .corporate-residential-divider{margin-top:48px}}
 @media(max-width:540px){.corporate-page .corporate-project-photos,.corporate-page .corporate-project-photos.three,.corporate-page .corporate-project-photos.single{grid-template-columns:1fr}.corporate-page .corporate-project-photos.three figure:first-child{grid-column:auto}.corporate-page .corporate-project-photos{gap:12px}.corporate-page .corporate-project-photos .corp-photo img{aspect-ratio:4/3}}
 @media(prefers-reduced-motion:reduce){.corporate-page .corporate-project-photos .corp-photo img{transition:none}.corporate-page .corporate-project-photos figure:hover img{transform:none}}
+
+/* Dedicated portfolio / works.html */
+.works-page{background:#fff}
+.works-page-hero{position:relative;background:#f3f2eb;padding:78px 0 80px;overflow:hidden}
+.works-page-hero-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:clamp(30px,5vw,80px);align-items:center}
+.works-page-hero .eyebrow{color:#779077}
+.works-page-hero h1{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(43px,5.2vw,69px);color:#1f3f30;line-height:1.2;letter-spacing:.1em;margin:12px 0 25px}
+.works-page-hero-lead{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(23px,2.8vw,36px)!important;letter-spacing:.055em;color:#2c4938!important;line-height:1.7!important;margin-bottom:23px!important}
+.works-page-hero p:not(.eyebrow){font-size:15px;line-height:2.1;color:#637369}
+.works-page-hero-link{display:inline-flex;align-items:center;gap:30px;padding:14px 2px;border-bottom:1px solid #476d53;color:#2a603d;font-weight:750;font-size:13px;margin-top:20px}
+.works-page-hero-image{overflow:hidden;box-shadow:22px 24px 0 #e1e6da}
+.works-page-hero-image img{height:auto;width:100%;aspect-ratio:4/3;object-fit:cover}
+.works-page-section{background:#fff}
+.works-page-section-head h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(28px,3.3vw,43px);margin:0 0 13px;color:#233f31}
+.works-page-section-head>p:last-child{font-size:14px;color:#69786c;line-height:1.95;margin:0 0 30px}
+.works-filter{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 15px}
+.works-filter-button{cursor:pointer;border:1px solid #d6e1d5;border-radius:2px;background:#f5f7f2;color:#355640;padding:11px 16px;font:inherit;font-size:13px;font-weight:700;transition:background .2s,color .2s}
+.works-filter-button span{font-size:11px;color:inherit;opacity:.7;margin-left:4px}
+.works-filter-button:hover,.works-filter-button.is-active{background:#234a38;color:#fff;border-color:#234a38}
+.works-filter-button:focus-visible{outline:3px solid #b4cda8;outline-offset:2px}
+.works-results-count{font-size:12px;color:#829085;margin:0 0 33px}
+.works-project{padding:34px 0 46px;margin-bottom:16px;border-top:1px solid #dde6dd}
+.works-project[hidden]{display:none!important}
+.works-project-heading{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:27px}
+.works-project-heading>div{max-width:820px}
+.works-project-index{font:italic 12px Georgia,serif;color:#a58958;letter-spacing:.1em}
+.works-project h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(23px,2.4vw,33px);color:#243c2f;letter-spacing:.045em;margin:12px 0}
+.works-project-heading p{color:#6b7a6f;font-size:14px;line-height:1.9;margin:0}
+.works-project-contact{color:#2c6340;font-size:12px;font-weight:750;white-space:nowrap;padding-bottom:6px;border-bottom:1px solid #7b987d}
+.works-detail-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}
+.works-detail-gallery.one-photo{grid-template-columns:minmax(0,620px)}
+.works-detail-photo{margin:0;min-width:0;position:relative;overflow:hidden;background:#edf0e9}
+.works-detail-photo img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;transition:transform .25s;cursor:zoom-in}
+.works-detail-photo:hover img{transform:scale(1.015)}
+.works-detail-photo figcaption{position:absolute;top:13px;left:13px;border-radius:1px;padding:6px 11px;background:rgba(27,64,43,.88);color:#fff;font-size:12px;font-weight:700;letter-spacing:.05em}
+.works-detail-photo:nth-child(even) figcaption{background:rgba(138,105,65,.92)}
+.works-page-note{font-size:12px;line-height:2;color:#7a857d;margin:22px 0 0}
+.works-crosslink{background:#e8eee5;padding:57px 0}
+.works-crosslink-grid{display:flex;gap:24px;align-items:center;justify-content:space-between}
+.works-crosslink h2{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(23px,2.6vw,33px);color:#244434;line-height:1.55;margin:0 0 12px}
+.works-crosslink p:last-child{font-size:14px;line-height:1.8;color:#657568;margin:0}
+.works-crosslink a{flex-shrink:0;background:#234a38;color:#fff;padding:16px 21px;border-radius:2px;font-size:13px;font-weight:750}
+@media(max-width:800px){.works-page-hero-grid{grid-template-columns:1fr}.works-page-hero-image{max-width:680px}.works-project-heading{flex-direction:column;align-items:flex-start;gap:14px}.works-crosslink-grid{display:block}.works-crosslink a{display:inline-block;margin-top:20px}}
+@media(max-width:600px){.works-page-hero{padding:50px 0 55px}.works-page-hero-image{box-shadow:10px 12px 0 #e1e6da}.works-page-section{padding-top:64px}.works-filter{gap:7px}.works-filter-button{padding:10px 12px;font-size:12px}.works-detail-gallery{grid-template-columns:1fr;gap:11px}.works-project{padding:26px 0 34px}.works-project-heading{margin-bottom:20px}.works-detail-photo figcaption{font-size:11px;top:9px;left:9px}}
+@media(prefers-reduced-motion:reduce){.works-filter-button,.works-detail-photo img{transition:none}.works-detail-photo:hover img{transform:none}}
