@@ -537,3 +537,27 @@ body{letter-spacing:.015em;background:#fff}
 @media(max-width:1050px){.corporate-page .annual-schedule{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:800px){.corporate-page .business-pain-layout{grid-template-columns:1fr;gap:25px}.corporate-page .annual-plan-cta{align-items:stretch;flex-direction:column}.corporate-page .annual-plan-cta .btn{width:100%;justify-content:center}.corporate-page .faq-grid{grid-template-columns:1fr}}
 @media(max-width:600px){.corporate-page .business-hero-points{gap:7px}.corporate-page .business-hero-points span{font-size:10px}.corporate-page .business-pain-list>div{grid-template-columns:35px 1fr;gap:10px;padding:17px 0}.corporate-page .business-pain-list p{font-size:14px}.corporate-page .annual-schedule{grid-template-columns:1fr;gap:12px}.corporate-page .annual-schedule-item{padding:21px 21px 23px}.corporate-page .annual-season{margin-bottom:12px}.corporate-page .annual-season strong{font-size:29px}.corporate-page .corporate-before-after{grid-template-columns:1fr;gap:12px}.corporate-page .annual-plan-cta{padding:23px 21px}.corporate-page .annual-plan-cta strong{font-size:16px}.corporate-page .corporate-before-after figcaption{padding:13px 15px;font-size:13px}}
+
+/* Expanded real-world case studies, including residential works */
+.corporate-page .corporate-residential-divider{margin-top:75px;padding:34px 0 5px;border-top:1px solid #d5d6ce}
+.corporate-page .corporate-residential-divider .eyebrow{margin:0 0 10px}
+.corporate-page .corporate-residential-divider h3{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(26px,3vw,36px);color:#1b323d;line-height:1.5;letter-spacing:.07em;margin:0 0 10px}
+.corporate-page .corporate-residential-divider p:last-child{font-size:14px;line-height:2;color:#667279;max-width:790px;margin:0 0 20px}
+.corporate-page .corporate-work-project{padding:36px 0 44px;border-bottom:1px solid #d8dad3}
+.corporate-page .corporate-work-project-head{max-width:850px;margin-bottom:22px}
+.corporate-page .corporate-work-project-head>span{display:block;font:italic 12px Georgia,serif;color:#987c51;letter-spacing:.11em;margin:0 0 7px}
+.corporate-page .corporate-work-project-head h4{font-family:"Yu Mincho","Hiragino Mincho ProN",serif;font-size:clamp(22px,2.25vw,29px);line-height:1.5;color:#233c46;letter-spacing:.04em;margin:0 0 10px}
+.corporate-page .corporate-work-project-head p{font-size:14px;color:#657379;line-height:1.95;margin:0}
+.corporate-page .corporate-project-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.corporate-page .corporate-project-photos.three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.corporate-page .corporate-project-photos.single{grid-template-columns:minmax(0,620px)}
+.corporate-page .corporate-project-photos figure{margin:0;border:1px solid #dfdfd8;min-width:0;background:#fff}
+.corporate-page .corporate-project-photos .corp-photo{position:relative;overflow:hidden}
+.corporate-page .corporate-project-photos .corp-photo img{display:block;width:100%;height:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .25s ease}
+.corporate-page .corporate-project-photos figure:hover img{transform:scale(1.02)}
+.corporate-page .corporate-project-photos .corp-photo span{position:absolute;left:12px;top:12px;display:inline-block;padding:6px 10px;font-size:10px;letter-spacing:.08em;color:#fff;background:rgba(26,46,55,.9)}
+.corporate-page .corporate-project-photos figure:nth-child(even) .corp-photo span{background:rgba(110,83,47,.92)}
+.corporate-page .corporate-project-photos figcaption{padding:13px 16px;font-size:13px;line-height:1.75;font-weight:700;color:#3d4c50}
+@media(max-width:760px){.corporate-page .corporate-project-photos.three{grid-template-columns:1fr 1fr}.corporate-page .corporate-project-photos.three figure:first-child{grid-column:span 2}.corporate-page .corporate-work-project{padding:27px 0 32px}.corporate-page .corporate-residential-divider{margin-top:48px}}
+@media(max-width:540px){.corporate-page .corporate-project-photos,.corporate-page .corporate-project-photos.three,.corporate-page .corporate-project-photos.single{grid-template-columns:1fr}.corporate-page .corporate-project-photos.three figure:first-child{grid-column:auto}.corporate-page .corporate-project-photos{gap:12px}.corporate-page .corporate-project-photos .corp-photo img{aspect-ratio:4/3}}
+@media(prefers-reduced-motion:reduce){.corporate-page .corporate-project-photos .corp-photo img{transition:none}.corporate-page .corporate-project-photos figure:hover img{transform:none}}
